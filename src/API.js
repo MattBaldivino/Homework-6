@@ -6,7 +6,7 @@ function API(){
 	const pomonaWeather = async () => {
 		try{
 			const city = document.getElementById("city").value;
-			const response = await fetch("http://api.weatherapi.com/v1/current.json?key=54c73d3dbacd48128ef214907232211&q=" + city + "&aqi=no");
+			const response = await fetch("https://api.weatherapi.com/v1/current.json?key=54c73d3dbacd48128ef214907232211&q=" + city + "&aqi=no");
 			const result = await response.json();
 			console.log(result);
 			const degrees = document.createElement("p");
